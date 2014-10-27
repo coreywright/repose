@@ -476,6 +476,7 @@
                 </executions>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
+                    <consoleOutput>true</consoleOutput>
                 </configuration>
             </plugin>
 
