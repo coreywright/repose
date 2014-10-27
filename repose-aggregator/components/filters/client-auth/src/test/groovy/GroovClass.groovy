@@ -1,13 +1,14 @@
 package a
+
 import groovy.json.JsonBuilder
+
 class GroovClass {
-    void hello()
-    {
+    void hello() {
         println "hello, world"
         boolean x = true;
-        if (x){
+        if (x) {
 
-        } else{
+        } else {
 
         }
 
@@ -18,19 +19,34 @@ class GroovClass {
 
         for (int i = 0; i < 10; i++) {
             println "for"
-            j = i == 2 ? 2 :3;
-            m = i == 2? 2 : 3;
+            println "this : s?should be fine"
+            println "this should not be fine" j = i == 2 ? 2 : 3;
+            j = i == 2 ? 2 : 3;
+            m = i == 2 ? 2 : 3;
         }
         println j
         println m
+        int z = 1
+        while (true) {
+            z += 1
+        }
+        try {
+
+        } catch (Exception e) {
+            println "uh oh"
+
+        }
 
 
     }
 
+    static void greet() {
 
 
-
-
+        synchronized ($LOCK) {
+            println "world"
+        }
+    }
 
 
 }

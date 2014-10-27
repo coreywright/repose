@@ -486,7 +486,7 @@
             <plugin>
                 <groupId>org.scalastyle</groupId>
                 <artifactId>scalastyle-maven-plugin</artifactId>
-                <version>0.5.0</version>
+                <version>0.6.0</version>
                 <configuration>
                     <verbose>false</verbose>
                     <failOnViolation>true</failOnViolation>
