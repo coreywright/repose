@@ -483,7 +483,7 @@
 
             <!-- try using relative path to make it only build in root directory-->
 
-            <plugin>
+            <!--plugin>
                 <groupId>org.scalastyle</groupId>
                 <artifactId>scalastyle-maven-plugin</artifactId>
                 <version>0.6.0</version>
@@ -505,11 +505,11 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin-->
 
 
             <!-- this is working now that doxygen is commented out-->
-            <plugin>
+            <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.7</version>
@@ -554,7 +554,7 @@
                         </exclusions>
                     </dependency>
                 </dependencies>
-            </plugin>
+            </plugin-->
 
         </plugins>
     </build>
