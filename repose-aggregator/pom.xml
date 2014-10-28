@@ -510,7 +510,7 @@
 
 
             <!-- this is working now that doxygen is commented out-->
-            <!--plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.7</version>
@@ -525,7 +525,7 @@
                             <target>
                                 <taskdef name="codenarc" classname="org.codenarc.ant.CodeNarcTask" classpathref="maven.plugin.classpath"/>
                                 <codenarc
-                                        ruleSetFiles="file:ruleset.xml"
+                                        ruleSetFiles="file:repose-aggregator/ruleset.xml"
                                         maxPriority1Violations="0"
                                         maxPriority2Violations="0"
                                         maxPriority3Violations="0"
@@ -555,7 +555,7 @@
                         </exclusions>
                     </dependency>
                 </dependencies>
-            </plugin-->
+            </plugin>
 
         </plugins>
     </build>
