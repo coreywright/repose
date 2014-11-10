@@ -55,7 +55,7 @@ public class ContentTransformerTest {
             mapper = new ObjectMapper();
             contentTransformer = new ContentTransformer();
             versionJsonFileReader = FileUtils.readFileToString(new File(getClass().getResource("/META-INF/schema/examples/json/version.json").toURI()));
-            versionXmlFileReader = FileUtils.readFileToString(new File(getClass().getResource("/META-INF/schema/examples/xml/version.xml").toURI()));
+            versionXmlFileReader = FileUtils.readFileToString(new File(getClass().getResource("/META-INF/schema/examples/xml/version.txt").toURI()));
             choicesJsonFileReader = FileUtils.readFileToString(new File(getClass().getResource("/META-INF/schema/examples/json/choices.json").toURI()));
             choicesXmlFileReader = FileUtils.readFileToString(new File(getClass().getResource("/META-INF/schema/examples/xml/choices.xml").toURI()));
         }
@@ -132,7 +132,7 @@ public class ContentTransformerTest {
         @Test
         public void shouldMarshalVersionXml() {
             final JAXBElement jaxbElement = xmlTransformer.transform(
-                    ContentTransformerTest.class.getResourceAsStream("/META-INF/schema/examples/xml/version.xml"));
+                    ContentTransformerTest.class.getResourceAsStream("/META-INF/schema/examples/xml/version.txt"));
 
             assertTrue(jaxbElement.getDeclaredType().isAssignableFrom(VersionChoice.class));
         }
